@@ -1,0 +1,16 @@
+{
+  "name": "aula05",
+  "version": "1.0.0",
+  "description": "Gerenciamento de Inventario",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node servidor/server.js"
+  },
+  "keywords": [],
+  "author": "vitoriabueno1811",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
