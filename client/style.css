@@ -1,13 +1,13 @@
-/* Configurações Globais e Resetação de Margens */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #f4f7f6;
+    background-color: #8b5495;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ header {
 }
 
 header h1 {
-    color: #2c3e50;
+    color: #f5f4f6;
     font-size: 2.2rem;
 }
 
@@ -33,10 +33,10 @@ header h1 {
 main {
     width: 100%;
     max-width: 900px;
-    background: #ffffff;
+    background: #fce1ff;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.0);
 }
 
 /* Formulário */
@@ -45,15 +45,15 @@ section form {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     margin-bottom: 35px;
-    background-color: #f9fafb;
+    background-color: #98719f;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #20242c;
 }
 
 section form input {
     padding: 12px;
-    border: 1px solid #d1d5db;
+    border: 1px solid #fefefe;
     border-radius: 6px;
     font-size: 0.95rem;
     outline: none;
@@ -61,15 +61,15 @@ section form input {
 }
 
 section form input:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    border-color: #d73bf6;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.0);
 }
 
 section form button {
     grid-column: 1 / -1;
     padding: 12px;
-    background-color: #2563eb;
-    color: white;
+    background-color: #5c3b78;
+    color: rgb(254, 246, 246);
     font-size: 1rem;
     font-weight: 600;
     border: none;
@@ -79,7 +79,7 @@ section form button {
 }
 
 section form button:hover {
-    background-color: #1d4ed8;
+    background-color: #371268;
 }
 
 /* Tabela */
@@ -98,28 +98,28 @@ table th, table td {
 }
 
 table thead tr {
-    background-color: #1e293b;
-    color: #ffffff;
+    background-color: #9d64ee;
+    color: #bdeaff;
     font-weight: 600;
 }
 
 table tbody tr {
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #c7dcf8;
     transition: background-color 0.15s ease;
 }
 
 table tbody tr:nth-of-type(even) {
-    background-color: #f8fafc;
+    background-color: #eab2fb;
 }
 
 table tbody tr:hover {
-    background-color: #f1f5f9;
+    background-color: #af74c9;
 }
 
 footer {
     margin-top: 30px;
     text-align: center;
     font-size: 0.85rem;
-    color: #64748b;
+    color: #984ec2;
     font-weight: 500;
 }
