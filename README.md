@@ -17,13 +17,13 @@ Projeto exemplo para aula de desenvolvimento de sistemas Back-End utilizando dad
 
   # Passo para Executar
   ---
- -  1. Clone o repositório
- -  2. Abra com VsCode e em um teminal CMD ou BASH didige:
+ -  1 Clone o repositório
+ -  2 Abra com VsCode e em um teminal CMD ou BASH didige:
 
      npm install
      npm run dev
 
-- 3. Teste as rotas com a extensão Thunder Client do VsCode
+- 3 Teste as rotas com a extensão Thunder Client do VsCode
 
   # Para testar o Front-End
   
@@ -31,10 +31,8 @@ Projeto exemplo para aula de desenvolvimento de sistemas Back-End utilizando dad
 
   # Rotas
   ---
-  Post time: http://localhost:3000/times
-  Get times: http://localhost:3000/times
-  Put time: http://localhost:3000/times/:id
-  Delete time: http://localhost:3000/times/:id
+  **Post: http://localhost:3001/inventario**
+  **Get: http://localhost:3001/inventario**
 
 # Testes com extensão Thunder Client do VsCode
 ---
@@ -47,4 +45,7 @@ Projeto exemplo para aula de desenvolvimento de sistemas Back-End utilizando dad
 ![Texto Alternativo](./Prints/Print-4.png)
 
 # Print do front-end
+---
+![Texto Alternativo](./Prints/Front-End.png)
+
   
