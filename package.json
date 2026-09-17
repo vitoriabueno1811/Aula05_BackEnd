@@ -2,7 +2,7 @@
   "name": "aula05",
   "version": "1.0.0",
   "description": "Gerenciamento de Inventario",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "node servidor/server.js"
   },
