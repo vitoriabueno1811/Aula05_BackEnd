@@ -1,12 +1,24 @@
 const express = require("express");
+const cors = require("cors");
+const routes = require("./src/routes.js");
+
+const rotaInicial = (req, res) => {
+    res.json("Backend respondendo")
+};7
 
 const app = express();
-const porta = 3001;
+app.use(cors());
 
-const dados = require("../dados.json");
+const dados = require("./dados.json");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+const porta = 3001;
+
+//rotas
+app.get('/', rotaInicial);
+app.use(routes);
 
 app.get("/inventario", (req, res) => {
     res.status(200).json(dados);

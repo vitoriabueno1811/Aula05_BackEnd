@@ -4,13 +4,14 @@
   "description": "Gerenciamento de Inventario",
   "main": "server.js",
   "scripts": {
-    "dev": "node servidor/server.js"
+    "dev": "node server.js"
   },
   "keywords": [],
   "author": "vitoriabueno1811",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^5.2.1"
   }
 }

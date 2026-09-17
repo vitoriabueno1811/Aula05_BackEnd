@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário</title>
+</head>
+
+<body>
+    <header>
+        <h1>Inventário</h1>
+    </header>
+    <main>
+        <section>
+            <form action="http://localhost:3001//inventário" method="post">
+                <input type="text" name="item" placeholder=" Nome do Item" required>
+                <input type="text" name="local" placeholder="Local" required>
+                <input type="date" name="dataRegistro" required>
+                <input type="number" name="valor" placeholder="Valor do Item" required>
+                <input type="text" name="patrimonio" placeholder="Número do Patrimônio" required>
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+        <section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Local</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+                        <th>Patrimônio</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela">
+                    <script>
+                        fetch("http://localhost:3001/inventario")
+                            .then(resp => resp.json())
+                            .then(resp => {
+                                resp.forEach(p => {
+                                    const linha = document.createElement('tr')
+                                    linha.innerHTML = `
+                        <td>${p.item}</td>                        
+                        <td>${p.local}</td>                        
+                        <td>${p.dataRegistro}</td>                        
+                        <td>${p.valor}</td>                        
+                        <td>${p.patrimonio}</td>                   
+                        `
+                                    tabela.appendChild(linha)
+                                })
+                            })
+                    </script>
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            by Vitória Bueno
+        </footer>
+    </main>
+</body>
+
+</html>
