@@ -21,6 +21,7 @@ Projeto exemplo para aula de desenvolvimento de sistemas Back-End utilizando dad
  -  2 Abra com VsCode e em um teminal CMD ou BASH didige:
 
      **npm install**
+    
      **npm run dev**
 
 - 3 Teste as rotas com a extensão Thunder Client do VsCode
