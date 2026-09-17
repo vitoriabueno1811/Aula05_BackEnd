@@ -1,18 +1,18 @@
-
+/* Configurações Globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
 body {
     background-color: #8b5495;
-    color: #333;
+    color: #2d1b33;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 30px 15px;
     min-height: 100vh;
 }
 
@@ -25,101 +25,122 @@ header {
 }
 
 header h1 {
-    color: #f5f4f6;
-    font-size: 2.2rem;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* Conteúdo Principal */
+/* Conteúdo Principal (Card) */
 main {
     width: 100%;
     max-width: 900px;
     background: #fce1ff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.0);
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Formulário */
 section form {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+    gap: 16px;
     margin-bottom: 35px;
     background-color: #98719f;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #20242c;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 section form input {
-    padding: 12px;
-    border: 1px solid #fefefe;
-    border-radius: 6px;
+    padding: 12px 16px;
+    border: 2px solid transparent;
+    border-radius: 8px;
     font-size: 0.95rem;
+    background-color: #ffffff;
+    color: #333;
     outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    transition: all 0.25s ease;
+}
+
+section form input::placeholder {
+    color: #888;
 }
 
 section form input:focus {
     border-color: #d73bf6;
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.0);
+    box-shadow: 0 0 0 4px rgba(215, 59, 246, 0.25);
 }
 
 section form button {
     grid-column: 1 / -1;
-    padding: 12px;
+    padding: 14px;
     background-color: #5c3b78;
-    color: rgb(254, 246, 246);
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section form button:hover {
     background-color: #371268;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+section form button:active {
+    transform: translateY(0);
 }
 
 /* Tabela */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     margin-top: 10px;
+    border-radius: 12px;
     overflow: hidden;
-    border-radius: 8px;
-    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 table th, table td {
-    padding: 14px 16px;
+    padding: 14px 18px;
     text-align: left;
 }
 
 table thead tr {
-    background-color: #9d64ee;
-    color: #bdeaff;
+    background-color: #5c3b78;
+    color: #ffffff;
     font-weight: 600;
 }
 
 table tbody tr {
-    border-bottom: 1px solid #c7dcf8;
-    transition: background-color 0.15s ease;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ebd4f2;
+    transition: background-color 0.2s ease;
 }
 
 table tbody tr:nth-of-type(even) {
-    background-color: #eab2fb;
+    background-color: #f7e4fb;
 }
 
 table tbody tr:hover {
-    background-color: #af74c9;
+    background-color: #e5bbee;
 }
 
+/* Rodapé */
 footer {
-    margin-top: 30px;
+    margin-top: auto;
+    padding-top: 25px;
     text-align: center;
-    font-size: 0.85rem;
-    color: #984ec2;
+    font-size: 0.9rem;
+    color: #ffffff;
     font-weight: 500;
+    opacity: 0.9;
 }
